@@ -10,16 +10,6 @@ import java.util.UUID;
 @Data
 @Entity(name = "TB_tasks")
 public class TaskModel {
-    /**
-     * id
-     * usuario (id_usuario
-     * descrição
-     * data de inicio
-     * de termino
-     * titulo
-     * prioridade
-     *
-     */
     @Id
     @GeneratedValue(generator = "UUID")
     private UUID id;
