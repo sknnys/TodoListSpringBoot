@@ -18,8 +18,7 @@ public class UserController {
 
     @PostMapping("/")
     public UserModel create(@RequestBody UserModel userModel) {
-       var userCreated =  this.userRepository.save(userModel);
-       return userCreated;
+       return this.userRepository.save(userModel);
     }
 
 }
