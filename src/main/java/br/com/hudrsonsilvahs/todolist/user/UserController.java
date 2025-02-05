@@ -19,6 +19,7 @@ public class UserController {
 
     @PostMapping("/")
     public ResponseEntity create(@RequestBody UserModel userModel) {
+        System.out.println("chegou no controller");
         var user = this.userRepository.findByUsername(userModel.getUsername());
         if(user != null) {
             return ResponseEntity.status(400).body("User already exists");
